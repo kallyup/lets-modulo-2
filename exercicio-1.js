@@ -63,12 +63,12 @@ function aluno(nome, idade, email, matricula, curso){
     this.curso = curso;
 }
 
-aluno.prototype.getCurso = function(){
+aluno.prototype.qualCurso = function(){
     return this.curso
 }
 
 let aluno1 = new aluno("deb","23","xx@gmail","12345","full stack")
 console.log(aluno1)
-console.log(aluno1.getCurso())
+console.log(aluno1.qualCurso())
 
 
