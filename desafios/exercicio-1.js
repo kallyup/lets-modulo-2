@@ -22,6 +22,21 @@ let aluno= {
 };
 let mensagem = aluno.qualCurso("")
 
+//jeito certo
+const aluno = {
+  nome: "Jaqueline",
+  matricula: 001,
+  idade: 27,
+  getCurso: function (curso) {
+    this.curso = curso
+  },
+
+}
+
+console.log(aluno);
+console.log(aluno.getCurso("poo"));
+console.log(aluno)
+
 2)Crie um objeto de nome Ave e adicione um atributo de nome espécie.
 Dentro do objeto Ave crie uma função, que retorno o atributo espécie.
 Retorne o objeto invocando a função criada.
