@@ -50,24 +50,55 @@ console.log(curso.media1)
 
 /*2 Faça um objeto TV com as propriedades canal, volume e ligada e métodos liga, desliga, mudaDeCanal e aumentaVolume, diminuiVolume.*/
 
-let tv = {
-    canal:"",
-    volume:"",
-    ligada:"",
-}
-tvf= function(liga, desliga, mudaDeCanal, aumentaVolume, diminuiVolume){
-    this.liga= liga,
-    this.desliga=desliga,
-    this.mudaDeCanal=mudaDeCanal,
-    this.aumentaVolume=aumentaVolume,
-    this.diminuiVolume=diminuiVolume;
 
+let canal1=13
+let volume1=20
+
+
+let tv = {
+    canal:canal1,
+    volume:volume1,
+    ligada:false,
+
+        liga(){
+            if(!this.ligada){
+                this.ligada=true
+            }
+        },
+        desliga(){
+            if(this.ligada){
+                this.ligada=false
+            }
+        },
+        mudaDeCanal(numero){
+            if(this.ligada){
+                this.canal=numero
+            }
+        },
+        aumentaVolume(numero){
+            if(this.ligada){
+                this.volume=numero
+            }
+        },
+        diminuiVolume(diminue){
+            if(this.volume>0 && this.ligada){
+                this.volume=diminue
+        }    
+        },
+        getTv: function (volume) {
+            this.volume = volume
+          },
+        
 }
+console.log(tv)
+console.log(volume1)
+
+
     
 
 
 
-/* 3 Refaça o exercício da TV utilizando uma função construtora*/
+/* 3 Refaça o exercício da TV utilizando uma função construtora
 function tv(canal, volume, ligada) {
         this.canal = canal
         this.volume = volume
@@ -91,4 +122,4 @@ class tv2 {
   
 }
 let a = new tv2(13,5,true,false)
-console.log(tv2)
+console.log(tv2)*/
