@@ -3,22 +3,24 @@
 
 
 class cnh{
-    constructor(pais,idade){
+    constructor(pais,idade,categoria){
     this.pais=pais,
-    this.idade=idade
+    this.idade=idade,
+    this.categoria=categoria
 
 }
 podeTirarCarteira(){
     if (this.pais==="BR"&&this.idade>17){
-        return this.pais + this.idade +" pode tirar carteira"
+        return this.pais + this.idade + this.categoria+ " pode tirar carteira"
     }else if((this.pais==="US" || this.pais==="CA")&& this.idade>15){
         return this.pais + this.idade +" pode tirar carteira"
-    }else if(this.pais==="RU" && this.idade>20){
+    }else if((this.pais==="RU") && (this.idade>20)){
         return this.pais + this.idade +" pode tirar carteira"
     }else{
-        return "ainda não"
+       
+        return "ainda não" 
     }
 }
 }
-let a = new cnh("RU ", 25)
+let a = new cnh("US", 25, "A")
 console.log(a.podeTirarCarteira())

@@ -48,7 +48,7 @@ curso.p2= 4
 console.log(curso.media1)
 
 
-/*2 Faça um objeto TV com as propriedades canal, volume e ligada e métodos liga, desliga, mudaDeCanal e aumentaVolume, diminuiVolume.*/
+/*2 Faça um objeto TV com as propriedades canal, volume e ligada e métodos liga, desliga, mudaDeCanal e aumentaVolume, diminuiVolume.
 
 
 let canal1=13
@@ -98,8 +98,12 @@ console.log(volume1)
 
 
 
-/* 3 Refaça o exercício da TV utilizando uma função construtora
-function tv(canal, volume, ligada) {
+/* 3 Refaça o exercício da TV utilizando uma função construtora*/
+let canal=13
+let volume=20
+
+
+function tv1(canal, volume, ligada) {
         this.canal = canal
         this.volume = volume
         this.ligado = ligada
@@ -107,7 +111,7 @@ function tv(canal, volume, ligada) {
     }
 
 let b = new tv1 (2,20,true)
-console.log(this.tv1)
+console.log(this.canal)
 
 //Refaça o exercício da TV utilizando a sintaxe de classe (class).
 class tv2 {
@@ -122,4 +126,4 @@ class tv2 {
   
 }
 let a = new tv2(13,5,true,false)
-console.log(tv2)*/
+console.log(tv2)
