@@ -106,9 +106,10 @@ let volume=20
 function tv1(canal, volume, ligada) {
         this.canal = canal
         this.volume = volume
-        this.ligado = ligada
+        this.ligado = ligada;
+}
+    
 
-    }
 
 let b = new tv1 (2,20,true)
 console.log(this.canal)
@@ -123,7 +124,29 @@ class tv2 {
 
 
     }
-  
+  liga(){
+        if(!this.ligada){
+            this.ligada=true
+        }
+    }
+    desliga(){
+        if(this.ligada){
+            this.ligada=false
+        }
+    }
+    mudaDeCanal(numero){
+        if(this.ligada){
+            this.canal=numero
+        }
+    }
+    aumentaVolume(numero){
+        if(this.ligada){
+            this.volume=numero
+        }
+    }
+    diminuiVolume(diminue){
+        if(this.volume>0 && this.ligada){
+            this.volume=diminue
+         }    
+    }
 }
-let a = new tv2(13,5,true,false)
-console.log(tv2)
