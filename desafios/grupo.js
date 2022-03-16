@@ -46,7 +46,7 @@ class Bank {
         }else if( valor>this.balance & this.#passcode){
             return "Saldo indisponivel";
         }else{
-            return "Senha incorreta" ;
+            return "Senha Incorreta" ;
         }
     }
 
@@ -63,7 +63,7 @@ class Bank {
         }else if( valor>this.balance & this.#passcode){
             return "Limite indsponível";
         }else{
-            return 'Senha incorreta';
+            return 'Senha Incorreta';
         }
     }
 
@@ -74,7 +74,7 @@ class Bank {
         }else if( valor>this.balance & this.#passcode){
             return "Saldo indisponivel";
         }else{
-            return "Senha errada"
+            return "Senha Incorreta"
         }
     }
 }
