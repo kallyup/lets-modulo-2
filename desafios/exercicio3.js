@@ -25,7 +25,7 @@ Construa uma classe Veiculo que tem como propriedades rodas (1 a n), usaCombusti
     }
    
 }
-let p1 = new perfil("joão", "url", "light"||"dark")
+let p1 = new perfil("joão", "url", "dark")
 console.log(p1)
 
 
